@@ -1,0 +1,62 @@
+// @forward "./base/reset";
+// @forward "./base/typography";
+@forward "./base/index";
+@use "./util/index" as variables;
+
+
+
+@mixin para-style ($size, $color) {
+    font-size: $size;
+    color: $color;
+}
+.first p{
+    @include para-style(25px, red);
+    margin-top: 5px
+}
+.second p{
+    @include para-style(55px, green);
+    margin-top: 50px
+}
+
+.btn {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.submit {
+    @extend .btn;
+    background: red
+}
+.more {
+    @extend .btn;
+    background: greenyellow;
+}
+@mixin setFontSize ($value) {
+    @if $value == first {
+        font-size: 12px;
+        color: cadetblue;
+    }  @else if $value == second {
+        font-size: 22px;
+        color: rgb(44, 13, 179);
+    }  @else if $value == third {
+        font-size: 32px;
+        color: rgb(216, 24, 216);
+    }  @else {
+        font-size: 55px;
+        color: rgb(243, 248, 248);
+    }
+}
+.second h3 {
+    @include setFontSize()
+}
+header {
+    background-color: variables.$header_bg;
+    padding: 1rem;
+}
+main {
+    background-color: variables.$main_bg;
+    padding: 1rem;
+}

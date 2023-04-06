@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+}
+
+p {
+  font-size: 60px;
+}
+
+.first p {
+  font-size: 25px;
+  color: red;
+  margin-top: 5px;
+}
+
+.second p {
+  font-size: 55px;
+  color: green;
+  margin-top: 50px;
+}
+
+.btn, .more, .submit {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.submit {
+  background: red;
+}
+
+.more {
+  background: greenyellow;
+}
+
+.second h3 {
+  font-size: 55px;
+  color: rgb(243, 248, 248);
+}
+
+header {
+  background-color: bisque;
+  padding: 1rem;
+}
+
+main {
+  background-color: orange;
+  padding: 1rem;
+}/*# sourceMappingURL=main.css.map */
