@@ -11,6 +11,18 @@ p {
   font-size: 60px;
 }
 
+.red-text {
+  color: red;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.green-text {
+  color: green;
+}
+
 .first p {
   font-size: 25px;
   color: red;

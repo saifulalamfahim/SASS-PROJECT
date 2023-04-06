@@ -3,7 +3,11 @@
 @forward "./base/index";
 @use "./util/index" as variables;
 
-
+@each $color in red, blue, green{
+    .#{$color}-text {
+        color: $color;
+    }
+}
 
 @mixin para-style ($size, $color) {
     font-size: $size;
